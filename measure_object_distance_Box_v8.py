@@ -24,7 +24,7 @@ def main():
     args = parse_arguments()
     frame_width, frame_height = args.webcam_resolution
 
-    model = YOLO("yolov8s-seg.pt")
+    model = YOLO("yolov8s.pt")
 
     box_annotator = sv.BoxAnnotator(
         thickness=2,
